@@ -19,7 +19,7 @@ st: \\
 6x_1+5x_2+x_3+2x_4 \leq 100 \\
 x_1,x_2,x_3,x_4  \geq 0
 $$
-* The verification logic modified the simplex algorithm, which is commonly used to solve linear programming problems, to obtain the optimal solution through relaxation. However, in this question, the player's answer is incorporated into the initial conditions. If relaxation still leads to a non-zero objective value, it indicates that the player's answer is not the optimal solution. On the other hand, if it is the optimal solution, further relaxation will not yield any value.
+* The verification logic modified the simplex algorithm, which is commonly used to solve linear programming problems, to obtain the optimal solution through relaxation. However, in this question, the player's answer is incorporated into the initial conditions. If relaxation still leads to a non-zero result value, it indicates that the player's answer is not the optimal solution. On the other hand, if it is the optimal solution, further relaxation will not yield any value.
 * The optimal solution is
 $$
 x_1 = 0, x_2 = 15, x_3 = 10, x_4 = 0, max = 1775
