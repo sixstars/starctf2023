@@ -1,2 +1,2 @@
 # starctf2023
-official writeup for starctf2023
+official writeups for starctf2023
