@@ -1,0 +1,1 @@
+flag='*CTF{Y0U_ar3_gO.d_@_gCD_1EAk!!}'
