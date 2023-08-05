@@ -1,0 +1,24 @@
+Function _/==/=__=_{
+    [CmdletBinding()] param(
+        [Parameter(Position = 0)]
+        [String]
+        $param1
+    )
+    $result = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($param1))
+    return $result
+}
+
+Function _\/_\_={
+    [CmdletBinding()] param(
+        [Parameter(Position = 0)]
+        [String]
+        $param1
+    )
+
+    $param1 = _/==/=__=_ -param1 $param1
+    $result  = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($param1))
+    $result | out-null
+}
+
+_\/_\_= ("S21OMFpudG9hR2hmY0hkemFGOXBjMTlsWVhONVgzSnBaMmgwUDMwPQ==")
+echo "Do you konw PWSH?"
